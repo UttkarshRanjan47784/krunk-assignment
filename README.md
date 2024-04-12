@@ -1,15 +1,32 @@
-# React + Vite + Tailwind CSS + Shadcn + Light/Dark Theme Template
+# Krunk Assignment
 
-## How to use?
-- Open the directory where you want your root directory of your frontend project to be.
-- open terminal there and type : 
+To remove scroll bars (NOTE : You will have to use trackpad, touchscreen or press the mouse scroll wheel to scroll.
+) :
+
+1. go to src/index.css and select the following code and press cntrl+/
+
 ```
-git clone https://github.com/UttkarshRanjan47784/vite-react-js-shadcn-withTheme-template.git
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+  width: 1px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
+}
 ```
-- Rename the folder created to your project name
-- Open the folder
-- Open terminal in that folder and type :
-``` 
-npm i
+
+2. Add the below code below the selected code.
+
 ```
-- You are good to go! Remember to change the title inside index.html!
+::-webkit-scrollbar {
+  display : none;
+}
+```
