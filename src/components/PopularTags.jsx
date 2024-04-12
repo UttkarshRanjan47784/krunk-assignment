@@ -18,7 +18,7 @@ export default function PopularTags() {
 
   return (
     <div className="w-full h-fit space-y-[10px]">
-      <p className="text-[13px]">Popular tags for handbag</p>
+      <p className="text-[13px] text-[#949494]">Popular tags for handbag</p>
       <div className="w-full h-fit flex space-x-[5px] relative">
         <div className="h-fit flex space-x-[10px] whitespace-nowrap w-[289px] overflow-x-auto">
           {renderTags}
