@@ -5,7 +5,7 @@ import ChatFooter from "./ChatFooter";
 
 export default function Wrapper() {
   return (
-    <div className="w-[360px] h-[800px] rounded-[20px] border-[7px] top-[110px] left-[780px] border-white bg-white grid grid-rows-8">
+    <div className="w-[360px] h-auto rounded-[20px] border-[7px] top-[110px] left-[780px] border-white bg-white grid grid-rows-8">
       <ChatHeader />
       <ChatBody />
       <ChatFooter />

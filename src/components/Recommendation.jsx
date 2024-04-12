@@ -7,7 +7,7 @@ import check2 from "../assets/check-2.png";
 import check1 from "../assets/check-1.png";
 
 export default function Recommendation() {
-  const arr = ["Color", "Size", "Material"];
+  const arr = ["Color", "Size", "Brand", "Material"];
 
   const renderTags = arr.map((item) => {
     return (
@@ -60,7 +60,8 @@ export default function Recommendation() {
         </div>
         <div className="flex flex-wrap gap-[10px]">
           <div className="w-fit h-fit py-[2px] px-[10px] text-[#4C82EF] font-medium bg-myTag text-[13px] rounded-[5px] border-[1px] border-[#4C82EF] flex justify-center items-center space-x-[5px]">
-            Strap - <span>Long</span>
+            <span className="font-[400]">Strap - </span>
+            <span className="font-[500]">Long</span>
             <img src={check2} />
           </div>
           {renderTags}
